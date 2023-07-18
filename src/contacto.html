@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <form action="" method="POST">
+            <div>
+                <label for="txtNombre">Nombre: *</label>
+                <input type="text" name="txtNombre" id="txtNombre" required>
+            </div>
+            <div>
+                <label for="txtCorreo">Correo: *</label>
+                <input type="email" name="txtCorreo" id="txtCorreo" required>
+            </div>
+            <div>
+                <label for="txtTelefono">Telefono: *</label>
+                <input type="tel" name="txtTelefono" id="txtTelefono" placeholder="(cod) 11 9999-9999" required>
+            </div>
+            <div>
+                <label for="txtFecha">Fecha de nacimiento: *</label>
+                <input type="date" name="txtFecha" id="txtFecha">
+            </div>
+            <div>
+                <label for="">Pais de origen: *</label>
+                <select name="lstPais" id="lstPais">
+                    <optgroup label="Sudamerica">
+                    <option value="54">Argentina</option>
+                    <option value="55">Brasil</option>
+                    <option value="57">Colombia</option>
+                    <option value="52">Mexico</option>
+                </optgroup>
+                <optgroup>
+                    <optgroup label="Europa">
+                        <option value="34">España</option>
+                        <option value="33">Francia</option>
+                        <option value="49">Alemania</option>
+                </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="">Asunto: *</label>
+                <select name="lstAsunto" id="lstAsunto" required>
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="ventas">Ventas</option>
+                    <option value="soporte">Soporte</option>
+                    <option value="webmaster">Webmaster</option>
+                </select>
+            </div>
+            <div>
+                <label for="txtMensaje">Mensaje:</label>
+                <textarea name="txtMensaje" id="txtMensaje"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="chkNewsletter" id="chkNewsletter" checked>
+                <label for="chkNewsletter">Deseo recibir mensajes sobre novedades</label>
+            </div>
+            <div>
+                <input type="checkbox" name="chkCondiciones" id="chkCondiciones">
+                <label for="chkCondiciones">Acepto terminos y condiciones</label>
+            </div>
+            <div class="opciones">
+                <label>Sos mayor de edad?</label>
+
+                <label for="optMayorSi">Si</label>
+                <input type="radio" name="optMayorEdad" id="optMayorSi">
+
+                <label for="optMayorNo">No</label>
+                <input type="radio" name="optMayorEdad" id="optMayorNo">
+            </div>
+            <div>
+                <button type="submit" name="btnEnviar">ENVIAR</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <i class="fa-brands fa-whatsapp"></i>
+    </footer>
+</body>
+</html>
